@@ -176,16 +176,20 @@ not a failure of the participant or their prompt.
 
 ## Presenter fallback states
 
-Keep these folders locally and label them clearly:
+The repository now includes four loadable Firefox checkpoints under
+`demo-backups/`:
 
-1. `01-local-dashboard`
-2. `02-firefox-extension`
-3. `03-with-weather`
-4. `04-audience-change`
-5. `99-finished`
+1. `00-opendyslexic` — a trivial stylesheet extension with the font bundled
+   locally;
+2. `01-dashboard-first-pass` — the dashboard with an intentional blank-task
+   validation bug;
+3. `02-dashboard-fixed` — the same dashboard with that failure fixed; and
+4. `03-dashboard-with-intention` — the fixed dashboard plus one locally saved
+   “today's intention” feature.
 
-Also keep screenshots or a short recording of loading the extension, adding a
-task, opening a new tab, and showing the weather failure state.
+See `demo-backups/README.md` for the exact load order, the failure to reproduce,
+and the tests to repeat. These folders are the primary fallback if generation
+or connectivity stalls; waiting is not the lesson.
 
 ## Official implementation references
 

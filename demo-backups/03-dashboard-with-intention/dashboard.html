@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My new tab</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <script src="dashboard.js" defer></script>
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="hero">
+        <div>
+          <p class="eyebrow">MY NEW TAB</p>
+          <h1 id="greeting">Good morning</h1>
+          <p id="today" class="today">Loading today's date…</p>
+        </div>
+        <p id="clock" class="clock" aria-label="Current time">--:--</p>
+      </header>
+
+      <main class="dashboard-grid">
+        <section class="card tasks-card" aria-labelledby="tasks-heading">
+          <div class="section-heading">
+            <div>
+              <p class="section-kicker">ONE THING AT A TIME</p>
+              <h2 id="tasks-heading">Today's tasks</h2>
+            </div>
+            <span id="task-count" class="task-count">0 open</span>
+          </div>
+
+          <form id="task-form" class="task-form">
+            <label class="sr-only" for="task-input">New task</label>
+            <input
+              id="task-input"
+              name="task"
+              type="text"
+              maxlength="120"
+              autocomplete="off"
+              placeholder="Add one small task"
+            >
+            <button type="submit">Add task</button>
+          </form>
+          <p id="form-message" class="form-message" aria-live="polite"></p>
+
+          <p id="empty-state" class="empty-state" hidden>
+            Nothing here yet. Add one small thing.
+          </p>
+          <ul id="task-list" class="task-list"></ul>
+        </section>
+
+        <aside class="side-column" aria-label="Intention, useful links, and dashboard note">
+          <section class="card intention-card" aria-labelledby="intention-heading">
+            <p class="section-kicker">ONE DELIBERATE CHOICE</p>
+            <h2 id="intention-heading">Today's intention</h2>
+            <form id="intention-form" class="intention-form">
+              <label class="sr-only" for="intention-input">Today's intention</label>
+              <input
+                id="intention-input"
+                name="intention"
+                type="text"
+                maxlength="100"
+                autocomplete="off"
+                placeholder="What matters today?"
+              >
+              <button type="submit">Save</button>
+            </form>
+            <p id="intention-message" class="intention-message" aria-live="polite"></p>
+          </section>
+
+          <section class="card links-card" aria-labelledby="links-heading">
+            <p class="section-kicker">GO SOMEWHERE USEFUL</p>
+            <h2 id="links-heading">Quick links</h2>
+            <div class="quick-links">
+              <a href="https://outlook.office.com/" target="_blank" rel="noreferrer">
+                <span class="link-mark" aria-hidden="true">E</span>
+                <span><strong>Email</strong><small>Open Outlook</small></span>
+              </a>
+              <a href="https://calendar.google.com/" target="_blank" rel="noreferrer">
+                <span class="link-mark" aria-hidden="true">C</span>
+                <span><strong>Calendar</strong><small>See the day</small></span>
+              </a>
+              <a href="https://github.com/" target="_blank" rel="noreferrer">
+                <span class="link-mark" aria-hidden="true">G</span>
+                <span><strong>GitHub</strong><small>Open projects</small></span>
+              </a>
+            </div>
+          </section>
+
+          <section class="card note-card" aria-labelledby="note-heading">
+            <p class="section-kicker">SOFTWARE FOR ONE</p>
+            <h2 id="note-heading">Built for your day</h2>
+            <p>
+              Tasks stay on this device. The dashboard makes no network
+              requests until you choose a quick link.
+            </p>
+          </section>
+        </aside>
+      </main>
+
+      <footer>
+        Prepared checkpoint: one extra feature · The intention is saved locally.
+      </footer>
+    </div>
+  </body>
+</html>
