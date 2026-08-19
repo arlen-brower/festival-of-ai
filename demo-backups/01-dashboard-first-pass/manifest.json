@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "My New Tab — First Pass",
+  "version": "1.0.0",
+  "description": "A personal new-tab dashboard with one intentional validation mistake.",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "dashboard-first-pass@festival-of-ai.local"
+    }
+  },
+  "permissions": ["storage"],
+  "chrome_url_overrides": {
+    "newtab": "dashboard.html"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "OpenDyslexic Website Font — Demo",
+  "version": "1.0.0",
+  "description": "Applies a bundled OpenDyslexic font to ordinary web pages.",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "opendyslexic-demo@festival-of-ai.local"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "css": ["opendyslexic.css"],
+      "all_frames": true
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["fonts/OpenDyslexic-Regular.otf"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
