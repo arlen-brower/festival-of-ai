@@ -13,7 +13,8 @@ simple tests, and an honest decision about whether they are worth building.
   sheet, demo strategy, facilitation notes, risks, and preparation checklist.
 - [Dashboard hero demo](docs/dashboard-demo.md) — staged Firefox new-tab demo,
   non-programmer framing, build prompt, tests, and deployment ladder.
-- [Tiny tool brief](materials/tiny-tool-brief.md) — participant worksheet and
+- [Tiny tool brief](materials/tiny-tool-brief.md)
+  ([printable PDF](materials/tiny-tool-brief.pdf)) — a take-home worksheet and
   optional prompts for refining or prototyping an idea.
 - [Talk slide deck](slides/customise-your-life-talk.pptx) — 14-slide
   conversation scaffold with the audience and customisation case up front, an
